@@ -1,0 +1,8 @@
+applications:
+- name: my_chart
+  command: node server.js
+  buildpack: nodejs_buildpack
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  path: dist/
