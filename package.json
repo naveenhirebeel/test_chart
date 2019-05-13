@@ -4,9 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --prod && cp -a server/. dist/",
-    "server": "cd server && node server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm start\"",
+    "build": "ng build --prod",
+    "dev": "concurrently --kill-others-on-fail \"npm start\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
